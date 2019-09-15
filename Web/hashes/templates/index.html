@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSAW</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+	<style type="text/css">
+	.image {
+		display: none;
+	}
+	img {
+		width: 400px;
+	}	
+
+	</style>
+</head>
+<body>
+	<a href="#bowtie">bowtie</a>
+	<a href="#fluffy">fluffy</a>
+	<a href="#beanie">beanie</a>
+
+	<div class="image" id="bowtie"><img src="http://i.imgur.com/C9tanfn.jpg"></div>
+	<div class="image" id="fluffy"><img src="http://i.imgur.com/oAdF86F.gif"></div>
+	<div class="image" id="beanie"><img src="http://i.imgur.com/Uc738dz.jpg"></div>
+
+	<div id="message">
+		<p>Send me cool links to images!</p>
+			<form method="POST" action="/message">
+			<input type="text" name="message">
+			<input type="submit">
+		</form>
+	</div>
+</body>
+
+<script type="text/javascript">
+	$(window).bind( 'hashchange', function(e) { 
+		$('.image').hide()
+		tag = window.location.hash
+		$(tag).show()
+	});
+	tag = window.location.hash
+	$(tag).show()
+</script>
+
+</html>

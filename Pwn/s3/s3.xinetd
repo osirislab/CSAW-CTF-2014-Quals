@@ -1,0 +1,12 @@
+service s3
+{
+    id          = s3
+    user        = amazon
+    server      = /home/amazon/s3
+    disable     = no
+    port        = 5333
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    type        = UNLISTED
+}

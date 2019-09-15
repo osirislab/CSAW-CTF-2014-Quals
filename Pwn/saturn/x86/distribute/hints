@@ -1,0 +1,8 @@
+1) Maybe provide the lib folder (not libchallengeresponse.so) [MIPS ONLY]
+2) Stub out the function in libchallengeresponse.so to run the program, your
+solution should work for /all/ challenge response pairs.
+3) We've managed to get our hands on an x86 version!
+(provide the x86/distribute folder) [MIPS ONLY]
+
+if we distribute the x86 originally, there should probably be no hints
+

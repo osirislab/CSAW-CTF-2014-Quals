@@ -1,0 +1,16 @@
+# tested on ubuntu 14.04
+sudo apt-get install qemu nmap
+cd MIPS/run_from_here
+./run.sh
+# listens on port 8888, change run.sh if you want to change this
+# then you can test the solution
+# change back to the main directory
+ruby ./solution.rb
+
+you should have the flag get printed out
+
+in the event that we want to distribute the x86 one instead. just distribute
+the x86/distribute instead of MIPS/distribute and run the x86/run_from_here
+run.sh instead
+
+
